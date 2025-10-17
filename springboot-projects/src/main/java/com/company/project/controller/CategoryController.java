@@ -71,7 +71,7 @@ public class CategoryController {
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body("Invalid User-Id format");
         }
-    }
+     }
 
     // READ - GET /api/categories/{id}
     @GetMapping("/{id}")
@@ -172,4 +172,5 @@ public class CategoryController {
             return ResponseEntity.badRequest().body("Invalid UUID format");
         }
     }
+
 }
