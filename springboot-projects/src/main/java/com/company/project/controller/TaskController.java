@@ -16,7 +16,6 @@ public class TaskController {
     public TaskController(TaskService taskService) {
         this.taskService = taskService;
     }
-
     @PostMapping("/create")
     public ResponseEntity<?> createTask(@RequestBody Map<String, Object> payload) {
         int result = taskService.createTask(payload);
@@ -49,3 +48,4 @@ public class TaskController {
         return result > 0 ? ResponseEntity.ok("Task deleted successfully!") : ResponseEntity.badRequest().body("Delete failed.");
     }
 }
+
