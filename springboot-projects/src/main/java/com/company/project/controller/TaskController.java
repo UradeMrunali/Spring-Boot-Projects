@@ -41,11 +41,11 @@ public class TaskController {
         int result = taskService.updateTask(taskId, payload);
         return result > 0 ? ResponseEntity.ok("Task updated successfully!") : ResponseEntity.badRequest().body("Update failed.");
     }
-
     @DeleteMapping("/{taskId}")
     public ResponseEntity<?> deleteTask(@PathVariable UUID taskId) {
         int result = taskService.deleteTask(taskId);
         return result > 0 ? ResponseEntity.ok("Task deleted successfully!") : ResponseEntity.badRequest().body("Delete failed.");
     }
 }
+
 
