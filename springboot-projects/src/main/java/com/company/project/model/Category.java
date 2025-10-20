@@ -16,6 +16,5 @@ public class Category {
     private String name;
     private UUID userId;
     private LocalDateTime createdAt;
-
-
 }
+
