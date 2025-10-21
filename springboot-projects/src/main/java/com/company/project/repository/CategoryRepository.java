@@ -35,7 +35,6 @@ public class CategoryRepository {
         if (category.getCategoryId() == null) {
             category.setCategoryId(UUID.randomUUID());
         }
-
         jdbcTemplate.update(sql,
                 category.getCategoryId(),
                 category.getName(),
@@ -96,3 +95,4 @@ public class CategoryRepository {
     }
 
 }
+
