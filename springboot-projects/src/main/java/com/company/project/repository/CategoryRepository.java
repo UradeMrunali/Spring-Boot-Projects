@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.UUID;
@@ -95,4 +94,5 @@ public class CategoryRepository {
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, categoryId, userId);
         return count != null && count > 0;
     }
+
 }
