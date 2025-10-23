@@ -3,7 +3,6 @@ package com.company.project.service;
 import com.company.project.model.User;
 import com.company.project.repository.UserRepository;
 import org.springframework.stereotype.Service;
-
 import java.sql.Timestamp;
 import java.util.*;
 
@@ -108,4 +107,5 @@ public class UserService {
         }
         return response;
     }
+
 }
