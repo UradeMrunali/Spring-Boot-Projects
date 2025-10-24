@@ -71,7 +71,6 @@ public class CategoryController {
             return ResponseEntity.badRequest().body("Invalid User-Id format");
         }
      }
-
     // READ - GET /api/categories/{id}
     @GetMapping("/{id}")
     public ResponseEntity<?> getCategoryById(
@@ -173,5 +172,6 @@ public class CategoryController {
     }
 
 }
+
 
 
