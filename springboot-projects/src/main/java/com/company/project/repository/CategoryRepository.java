@@ -1,5 +1,4 @@
 package com.company.project.repository;
-
 import com.company.project.model.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -43,7 +42,6 @@ public class CategoryRepository {
 
         return findById(category.getCategoryId());
     }
-
     // READ - Find ALL categories (no user filter)
     public List<Category> findAll() {
         String sql = "SELECT * FROM categories ORDER BY created_at DESC";
@@ -95,3 +93,4 @@ public class CategoryRepository {
     }
 
 }
+
