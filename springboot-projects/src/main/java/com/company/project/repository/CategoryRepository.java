@@ -39,7 +39,6 @@ public class CategoryRepository {
                 category.getName(),
                 category.getUserId()
         );
-
         return findById(category.getCategoryId());
     }
     // READ - Find ALL categories (no user filter)
@@ -93,4 +92,5 @@ public class CategoryRepository {
     }
 
 }
+
 
