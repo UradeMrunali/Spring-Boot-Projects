@@ -90,7 +90,4 @@ public class CategoryRepository {
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, categoryId, userId);
         return count != null && count > 0;
     }
-
 }
-
-
