@@ -4,7 +4,6 @@ import com.company.project.model.Task;
 import com.company.project.service.TaskService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.*;
 
 @RestController
@@ -47,5 +46,6 @@ public class TaskController {
         return result > 0 ? ResponseEntity.ok("Task deleted successfully!") : ResponseEntity.badRequest().body("Delete failed.");
     }
 }
+
 
 
