@@ -14,5 +14,3 @@ public class Category {
     private UUID userId;
     private LocalDateTime createdAt;
 }
-
-
