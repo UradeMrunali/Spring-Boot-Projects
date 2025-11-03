@@ -1,5 +1,4 @@
 package com.company.project.service;
-
 import com.company.project.model.Category;
 import com.company.project.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -71,4 +70,5 @@ public class CategoryService {
         if (categoryId == null) return true;
         return categoryRepository.belongsToUser(categoryId, userId);
     }
+
 }
