@@ -1,5 +1,4 @@
 package com.company.project.controller;
-
 import com.company.project.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -64,3 +63,4 @@ public class UserController {
     }
 
 }
+
