@@ -62,21 +62,19 @@ public class UserRepository {
                 userId.toString()
         );
     }
-
     public User getUserByEmailAndPassword(String email, String password) {
         String sql = "SELECT * FROM users WHERE email = ? AND password = ? AND status = true";
         List<User> users = jdbcTemplate.query(sql, new Object[]{email, password}, userRowMapper);
         return users.isEmpty() ? null : users.get(0);
     }
-
     public int deactivateUser(UUID userId) {
         String sql = "UPDATE users SET status = false WHERE user_id = ?";
         return jdbcTemplate.update(sql, userId.toString());
     }
-
     public List<User> getAllUsers() {
         String sql = "SELECT * FROM users WHERE status = true AND role = 'USER'";
         return jdbcTemplate.query(sql, userRowMapper);
     }
 
 }
+
