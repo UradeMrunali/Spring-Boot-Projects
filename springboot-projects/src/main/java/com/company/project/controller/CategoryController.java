@@ -169,5 +169,4 @@ public class CategoryController {
             return ResponseEntity.badRequest().body("Invalid UUID format");
         }
     }
-
 }
