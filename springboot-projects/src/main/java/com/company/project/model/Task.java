@@ -19,5 +19,3 @@ public class Task {
     private Timestamp createdAt;
     private Timestamp updatedAt;
 }
-
-
