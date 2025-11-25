@@ -3,7 +3,6 @@ package com.company.project.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.sql.Timestamp;
 import java.util.UUID;
 
@@ -30,4 +29,5 @@ public class User {
     public void setIsActive(boolean isActive) {
         this.status = isActive;
     }
+
 }
