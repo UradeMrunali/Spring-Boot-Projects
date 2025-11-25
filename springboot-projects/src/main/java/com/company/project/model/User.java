@@ -1,5 +1,4 @@
 package com.company.project.model;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,10 +23,8 @@ public class User {
     public boolean isIsActive() {
         return status;
     }
-
     public void setIsActive(boolean isActive) {
         this.status = isActive;
     }
 
 }
-
