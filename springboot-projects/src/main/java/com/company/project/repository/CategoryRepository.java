@@ -10,7 +10,6 @@ import java.util.UUID;
 
 @Repository
 public class CategoryRepository {
-
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
@@ -91,3 +90,4 @@ public class CategoryRepository {
         return count != null && count > 0;
     }
 }
+
