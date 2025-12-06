@@ -12,7 +12,6 @@ public class UserService {
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
     // Register a new user
     public Map<String, Object> createUser(Map<String, Object> payload) {
         Map<String, Object> response = new HashMap<>();
@@ -34,7 +33,6 @@ public class UserService {
         }
         return response;
     }
-
     // Login user
     public Map<String, Object> loginUser(Map<String, Object> payload) {
         Map<String, Object> response = new HashMap<>();
@@ -106,4 +104,3 @@ public class UserService {
         return response;
     }
 }
-
