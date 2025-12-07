@@ -51,7 +51,6 @@ public class UserController {
         }
         return ResponseEntity.ok(response);
     }
-
     @ApiOperation(value = "Deactivate a user")
     @DeleteMapping("/delete_user")
     public ResponseEntity<?> deleteUser(@RequestBody Map<String, Object> payload) {
@@ -62,3 +61,4 @@ public class UserController {
         return ResponseEntity.ok(response);
     }
 }
+
