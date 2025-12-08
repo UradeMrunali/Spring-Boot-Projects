@@ -120,5 +120,3 @@ public class TaskRepository {
         return jdbcTemplate.update(sql, taskId);
     }
 }
-
-
