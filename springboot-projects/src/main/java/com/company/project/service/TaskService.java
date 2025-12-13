@@ -1,5 +1,4 @@
 package com.company.project.service;
-
 import com.company.project.model.Task;
 import com.company.project.repository.TaskRepository;
 import org.springframework.stereotype.Service;
@@ -76,3 +75,4 @@ public class TaskService {
     }
 
 }
+
