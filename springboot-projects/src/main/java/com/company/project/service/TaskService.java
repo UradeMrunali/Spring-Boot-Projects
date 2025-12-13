@@ -3,7 +3,6 @@ package com.company.project.service;
 import com.company.project.model.Task;
 import com.company.project.repository.TaskRepository;
 import org.springframework.stereotype.Service;
-
 import java.sql.Timestamp;
 import java.util.*;
 
@@ -75,4 +74,5 @@ public class TaskService {
             taskRepository.markTaskOverdue(task.getTaskId());
         }
     }
+
 }
