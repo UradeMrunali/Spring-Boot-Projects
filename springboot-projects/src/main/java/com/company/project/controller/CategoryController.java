@@ -1,5 +1,4 @@
 package com.company.project.controller;
-
 import com.company.project.model.Category;
 import com.company.project.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -170,3 +169,4 @@ public class CategoryController {
         }
     }
 }
+
