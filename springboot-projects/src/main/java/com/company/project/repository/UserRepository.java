@@ -46,7 +46,6 @@ public class UserRepository {
                 user.getCreatedAt()
         );
     }
-
     public User getUserById(UUID userId) {
         String sql = "SELECT * FROM users WHERE user_id = ? AND status = true";
         List<User> users = jdbcTemplate.query(sql, new Object[]{userId.toString()}, userRowMapper);
@@ -77,3 +76,4 @@ public class UserRepository {
     }
 
 }
+
