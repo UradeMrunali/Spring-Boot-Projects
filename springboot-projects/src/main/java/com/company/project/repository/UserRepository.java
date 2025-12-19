@@ -51,7 +51,6 @@ public class UserRepository {
         List<User> users = jdbcTemplate.query(sql, new Object[]{userId.toString()}, userRowMapper);
         return users.isEmpty() ? null : users.get(0);
     }
-
     public int updateUser(UUID userId, User user) {
         String sql = "UPDATE users SET email = ?, password = ?, status = ? WHERE user_id = ?";
         return jdbcTemplate.update(sql,
@@ -76,4 +75,5 @@ public class UserRepository {
     }
 
 }
+
 
