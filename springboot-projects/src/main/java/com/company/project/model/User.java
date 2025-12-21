@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.sql.Timestamp;
 import java.util.UUID;
-
 /**
  * Model class representing a User.
  */
@@ -28,3 +27,4 @@ public class User {
     }
 
 }
+
