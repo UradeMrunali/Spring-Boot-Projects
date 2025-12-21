@@ -22,11 +22,7 @@ public class User {
     public boolean isIsActive() {
         return status;
     }
-    
     public void setIsActive(boolean isActive) {
         this.status = isActive;
     }
-
 }
-
-
