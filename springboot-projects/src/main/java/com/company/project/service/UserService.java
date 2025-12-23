@@ -6,7 +6,6 @@ import java.sql.Timestamp;
 import java.util.*;
 @Service
 public class UserService {
-
     private final UserRepository userRepository;
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -103,3 +102,4 @@ public class UserService {
         return response;
     }
 }
+
