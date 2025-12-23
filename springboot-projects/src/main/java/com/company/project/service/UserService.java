@@ -1,5 +1,4 @@
 package com.company.project.service;
-
 import com.company.project.model.User;
 import com.company.project.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -104,3 +103,4 @@ public class UserService {
         return response;
     }
 }
+
