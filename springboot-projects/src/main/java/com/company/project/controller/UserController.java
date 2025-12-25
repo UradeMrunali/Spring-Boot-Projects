@@ -14,7 +14,6 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
     @ApiOperation(value = "Register a new user")
     @PostMapping("/register")
     public ResponseEntity<?> createUser(@RequestBody Map<String, Object> payload) {
@@ -61,4 +60,5 @@ public class UserController {
         return ResponseEntity.ok(response);
     }
 }
+
 
