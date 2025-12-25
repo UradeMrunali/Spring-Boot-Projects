@@ -23,7 +23,6 @@ public class UserController {
         }
         return ResponseEntity.ok(response);
     }
-
     @ApiOperation(value = "Login user")
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody Map<String, Object> payload) {
@@ -60,5 +59,6 @@ public class UserController {
         return ResponseEntity.ok(response);
     }
 }
+
 
 
